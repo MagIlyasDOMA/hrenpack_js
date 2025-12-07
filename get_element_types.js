@@ -1,4 +1,3 @@
-"use strict";
 function button_submit(parent) {
     const buttons = parent.querySelectorAll('button');
     let submit = null;
@@ -8,4 +7,5 @@ function button_submit(parent) {
     });
     return submit;
 }
+export { button_submit };
 //# sourceMappingURL=get_element_types.js.map

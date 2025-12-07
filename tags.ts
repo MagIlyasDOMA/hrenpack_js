@@ -1,4 +1,5 @@
-const protectedAttributes = new WeakMap()
+import {HyperTextNotification} from './notifications'
+
 type StepElementStatus = 'uncomplete' | 'active' | 'complete';
 
 // Добавляем интерфейс для расширения HTMLElement
@@ -354,7 +355,6 @@ class HTMLFile extends HTMLElement {
     }
 }
 
-
 class ClickToCopy extends HTMLElement {
     private notification: HyperTextNotification
 
@@ -399,3 +399,5 @@ customElements.define('step-bar', Stepbar);
 customElements.define('ab-num', AbbreviatedNumber)
 customElements.define('include-html', HTMLFile);
 customElements.define('click-to-copy', ClickToCopy)
+
+export { ClickToCopy, Stepbar, StepElement, AbbreviatedNumber, HTMLFile };

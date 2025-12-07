@@ -1,5 +1,4 @@
-"use strict";
-const protectedAttributes = new WeakMap();
+import { HyperTextNotification } from './notifications';
 class AbbreviatedNumber extends HTMLElement {
     constructor() {
         super();
@@ -346,4 +345,5 @@ customElements.define('step-bar', Stepbar);
 customElements.define('ab-num', AbbreviatedNumber);
 customElements.define('include-html', HTMLFile);
 customElements.define('click-to-copy', ClickToCopy);
+export { ClickToCopy, Stepbar, StepElement, AbbreviatedNumber, HTMLFile };
 //# sourceMappingURL=tags.js.map

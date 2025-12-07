@@ -43,3 +43,10 @@ function intToPixel(number: NumStr = '0'): string {
         return '0';
     return !isNaN(parseInt(number)) ? number + 'px' : number;
 }
+
+export {
+    input_type_fc,
+    input_form_control,
+    input_form_control_unline,
+    intToPixel,
+}

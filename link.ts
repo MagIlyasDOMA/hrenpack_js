@@ -5,3 +5,5 @@ function loadCSS(href: string): void {
     link.href = href;
     document.head.appendChild(link);
 }
+
+export { loadCSS };

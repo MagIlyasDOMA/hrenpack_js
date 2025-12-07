@@ -28,3 +28,4 @@ function hasCookie(name: string): boolean {
     return getCookie(name) != null;
 }
 
+export { getCookie, setCookie, hasCookie };

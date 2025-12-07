@@ -1,4 +1,3 @@
-"use strict";
 function isAbsoluteUrl(url) {
     try {
         new URL(url);
@@ -24,4 +23,5 @@ function combineUrls(baseUrl, relativeUrl) {
 function getScriptSite(script) {
     return new URL(script.src).origin;
 }
+export { getScriptSite, isAbsoluteUrl, combineUrls };
 //# sourceMappingURL=url.js.map

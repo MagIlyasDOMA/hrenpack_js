@@ -4,3 +4,5 @@ class NotAuthorizedError extends Error {
         this.name = 'NotAuthorizedError'
     }
 }
+
+export {NotAuthorizedError}

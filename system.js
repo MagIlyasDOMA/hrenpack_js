@@ -1,4 +1,3 @@
-"use strict";
 function getSystemTheme() {
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').media !== 'not all') {
         const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -29,4 +28,5 @@ function redirectBackOrClose(default_url = '/') {
 function getHost() {
     return window.location.protocol + '//' + window.location.host;
 }
+export { getSystemTheme, copyTextToClipboard, redirectBackOrClose, getHost };
 //# sourceMappingURL=system.js.map

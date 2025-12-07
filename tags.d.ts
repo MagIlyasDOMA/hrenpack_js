@@ -1,8 +1,4 @@
-declare const protectedAttributes: WeakMap<WeakKey, any>;
 type StepElementStatus = 'uncomplete' | 'active' | 'complete';
-interface StepbarElement extends HTMLElement {
-    currentStep: number;
-}
 declare class AbbreviatedNumber extends HTMLElement {
     isShortened: boolean;
     originalNumber: number;
@@ -60,4 +56,5 @@ declare class ClickToCopy extends HTMLElement {
     set isNotified(value: boolean);
     connectedCallback(): void;
 }
+export { ClickToCopy, Stepbar, StepElement, AbbreviatedNumber, HTMLFile };
 //# sourceMappingURL=tags.d.ts.map

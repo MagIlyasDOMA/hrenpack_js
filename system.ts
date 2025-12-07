@@ -39,3 +39,10 @@ function redirectBackOrClose(default_url: string = '/'): void {
 function getHost() {
     return window.location.protocol + '//' + window.location.host;
 }
+
+export {
+    getSystemTheme,
+    copyTextToClipboard,
+    redirectBackOrClose,
+    getHost
+}

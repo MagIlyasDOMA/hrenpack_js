@@ -1,2 +1,2 @@
-declare const stylesRoot: CSSStyleDeclaration;
+export declare const stylesRoot: CSSStyleDeclaration;
 //# sourceMappingURL=auto.d.ts.map

@@ -1,4 +1,3 @@
-"use strict";
 function getInputCursorPosition(input) {
     const start = input.selectionStart;
     if (start == null)
@@ -28,4 +27,5 @@ function getInputLabel(input) {
         throw new Error("Label не найден. Возможно, вы не использовали атрибут for в нем");
     return label;
 }
+export { getInputLabel, getInputCursorPosition, copyInputToClipboard, clearInput_and_addLastSymbol };
 //# sourceMappingURL=input.js.map

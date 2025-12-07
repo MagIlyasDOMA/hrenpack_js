@@ -1,4 +1,3 @@
-"use strict";
 function getCookie(name) {
     const nameEQ = `${name}=`;
     const cookiesArray = document.cookie.split(';');
@@ -25,4 +24,5 @@ function setCookie(name, value, days = null, path = '/') {
 function hasCookie(name) {
     return getCookie(name) != null;
 }
+export { getCookie, setCookie, hasCookie };
 //# sourceMappingURL=cookie.js.map

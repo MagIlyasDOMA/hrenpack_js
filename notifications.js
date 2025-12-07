@@ -1,4 +1,4 @@
-"use strict";
+import { intToPixel } from "./styles";
 function pushNotification(title = "Уведомление", body = "Текст уведомления", icon = null) {
     if (Notification.permission !== "granted") {
         Notification.requestPermission().then(permission => {
@@ -89,4 +89,5 @@ class HyperTextNotification {
         }, actualTimeout * 1000);
     }
 }
+export { HyperTextNotification, pushNotification };
 //# sourceMappingURL=notifications.js.map

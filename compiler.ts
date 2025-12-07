@@ -17,3 +17,5 @@ function downloadTextAsFile(filename: string, text: string) {
     // Освобождаем URL
     URL.revokeObjectURL(url);
 }
+
+export { downloadTextAsFile };

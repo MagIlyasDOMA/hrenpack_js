@@ -7,7 +7,6 @@ function isAbsoluteUrl(url: string): boolean {
     }
 }
 
-
 function combineUrls(baseUrl: string, relativeUrl: string): string {
     try {
         if (!baseUrl) {
@@ -21,7 +20,12 @@ function combineUrls(baseUrl: string, relativeUrl: string): string {
     }
 }
 
-
 function getScriptSite(script: HTMLScriptElement): string {
     return new URL(script.src).origin;
+}
+
+export {
+    getScriptSite,
+    isAbsoluteUrl,
+    combineUrls
 }

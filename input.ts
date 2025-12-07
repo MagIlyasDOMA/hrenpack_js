@@ -37,3 +37,10 @@ function getInputLabel(input: HTMLInputElement): HTMLLabelElement {
         throw new Error("Label не найден. Возможно, вы не использовали атрибут for в нем")
     return label
 }
+
+export {
+    getInputLabel,
+    getInputCursorPosition,
+    copyInputToClipboard,
+    clearInput_and_addLastSymbol
+}

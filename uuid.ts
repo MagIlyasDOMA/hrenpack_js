@@ -5,3 +5,5 @@ function generateUUIDv4(): string {
         return v.toString(16);
     });
 }
+
+export { generateUUIDv4 };

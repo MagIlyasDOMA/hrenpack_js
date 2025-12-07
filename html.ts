@@ -140,11 +140,15 @@ function elementToHyperlink(element: HTMLElement, href: string,
     return element
 }
 
-
-/**
- * @deprecated Use elementToHyperlink instead
- */
-function elementToAnchor(element: HTMLElement, href: string,
-                         cursorPointer: boolean = true, preventDefault: boolean = false): HTMLElement {
-    return elementToHyperlink(element, href, cursorPointer, preventDefault)
-}
+export {
+    escapeHTML,
+    togglePassword,
+    strFormat,
+    elementToHyperlink,
+    password_format,
+    element_to_div,
+    element_toHTMLText,
+    isTextWrapped,
+    get_tagName,
+    notArrayEmpty
+};

@@ -1,4 +1,3 @@
-"use strict";
 function generateUUIDv4() {
     return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
         const r = Math.random() * 16 | 0;
@@ -6,4 +5,5 @@ function generateUUIDv4() {
         return v.toString(16);
     });
 }
+export { generateUUIDv4 };
 //# sourceMappingURL=uuid.js.map

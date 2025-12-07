@@ -112,3 +112,5 @@ class GETParamsManager {
         window.history.pushState({}, '', newUrl);
     }
 }
+
+export { ClickableLinksFactory, GETParamsManager };

@@ -1,3 +1,5 @@
+import {intToPixel} from "./styles";
+
 function pushNotification(title: string = "Уведомление", body: string = "Текст уведомления",
                           icon: NullStr = null): void {
     if (Notification.permission !== "granted") {
@@ -66,4 +68,9 @@ class HyperTextNotification {
             }
         }, actualTimeout * 1000);
     }
+}
+
+export {
+    HyperTextNotification,
+    pushNotification
 }
