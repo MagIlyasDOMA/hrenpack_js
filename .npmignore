@@ -1,0 +1,40 @@
+# .npmignore для hrenpack_js
+
+# Файлы разработки и конфигурации
+tsconfig.json
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Исходные TypeScript файлы (публикуем только скомпилированные)
+*.ts
+!*.d.ts
+
+# Директории
+src/
+node_modules/
+dist/
+coverage/
+__tests__/
+examples/
+.idea/
+*.tgz
+
+# Системные файлы
+.git/
+.gitignore
+.npmignore
+.eslintrc
+.prettierrc
+.editorconfig
+
+# Временные файлы
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Документация (если решили исключить)
+README.md
+CHANGELOG.md
+CONTRIBUTING.md
