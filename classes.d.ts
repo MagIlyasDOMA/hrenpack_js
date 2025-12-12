@@ -17,5 +17,4 @@ declare class GETParamsManager {
     clear(): void;
     private updateURL;
 }
-export { ClickableLinksFactory, GETParamsManager };
 //# sourceMappingURL=classes.d.ts.map

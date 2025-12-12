@@ -1,4 +1,4 @@
-import {HyperTextNotification} from './notifications'
+// import {HyperTextNotification} from './notifications'
 
 type StepElementStatus = 'uncomplete' | 'active' | 'complete';
 
@@ -19,6 +19,10 @@ class AbbreviatedNumber extends HTMLElement {
         this.addEventListener('click', this.toggle.bind(this));
         if (isNaN(this.originalNumber))
             throw new TypeError('The value must be a number');
+    }
+
+    static get observedAttributes(): string[] {
+        return ['lang', 'use_comma']
     }
 
     private toggle(): void {
@@ -109,15 +113,16 @@ class AbbreviatedNumber extends HTMLElement {
 class StepElement extends HTMLElement {
     constructor() {
         super();
-        this.attachShadow({mode: 'open'});
-        this.shadowRoot!.innerHTML = `
+        if (this.textContent)
+            this.label = this.textContent;
+        this.innerHTML = `
             <div data-sb-generated="circle"></div>
             <div data-sb-generated="label"><slot></slot></div>
         `;
     }
 
     static get observedAttributes(): string[] {
-        return ['active', 'completed', 'href']
+        return ['active', 'completed', 'label']
     }
 
     get index(): number {
@@ -138,6 +143,14 @@ class StepElement extends HTMLElement {
 
     private set completed(force: boolean) {
         this.toggleAttribute('completed', force)
+    }
+
+    get label(): string {
+        return this.getAttribute('label') || ""
+    }
+
+    set label(value: string) {
+        this.setAttribute('label', value);
     }
 
     private reset() {
@@ -171,10 +184,10 @@ class StepElement extends HTMLElement {
     }
 
     connectedCallback() {
-        this.shadowRoot!.querySelector('[data-sb-generated="circle"]')!.textContent = this.index.toString();
+        this.querySelector('[data-sb-generated="circle"]')!.textContent = this.index.toString();
+        this.querySelector('[data-sb-generated="label"]')!.textContent = this.label;
         const parent = this.parentElement as StepbarElement;
         const currentStep: number = parent.currentStep || 1;
-        console.log(this.index + ' ' + currentStep)
         if (this.index === currentStep)
             this.active = true;
         else if (this.index < currentStep)
@@ -190,7 +203,6 @@ class Stepbar extends HTMLElement {
 
         this.attachShadow({mode: 'open'});
         this.shadowRoot!.innerHTML = `
-            <div class="stepbar-progress"></div>
             <slot></slot>
         `;
     }
@@ -221,7 +233,6 @@ class Stepbar extends HTMLElement {
 
     private updateSteps() {
         const currentStep = parseInt(this.getAttribute('current') || '1');
-        // const progress = this.shadowRoot!.querySelector('.stepbar-progress') as HTMLElement;
         const elements: StepElement[] = Array.from(this.children).filter((el): el is StepElement => el.tagName === 'SB-ELEMENT');
 
         elements.forEach((element, index) => {
@@ -234,11 +245,6 @@ class Stepbar extends HTMLElement {
                 element.status = 'active';
             }
         });
-
-        /*if (elements.length > 1 && progress) {
-            const progressPercent = ((currentStep - 1) / (elements.length - 1)) * 100;
-            progress.style.width = `${progressPercent}%`;
-        }*/
     }
 
     get currentStep(): number {
@@ -255,12 +261,10 @@ class HTMLFile extends HTMLElement {
         super();
     }
 
-    // Getter для src
     get src(): string {
         return this.getAttribute('src') || '';
     }
 
-    // Setter для src
     set src(value: string) {
         if (value) {
             this.setAttribute('src', value);
@@ -400,4 +404,4 @@ customElements.define('ab-num', AbbreviatedNumber)
 customElements.define('include-html', HTMLFile);
 customElements.define('click-to-copy', ClickToCopy)
 
-export { ClickToCopy, Stepbar, StepElement, AbbreviatedNumber, HTMLFile };
+// export { ClickToCopy, Stepbar, StepElement, AbbreviatedNumber, HTMLFile };

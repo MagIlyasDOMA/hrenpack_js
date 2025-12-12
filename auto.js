@@ -1,2 +1,3 @@
-export const stylesRoot = getComputedStyle(document.documentElement);
+"use strict";
+const stylesRoot = getComputedStyle(document.documentElement);
 //# sourceMappingURL=auto.js.map

@@ -38,9 +38,9 @@ function getInputLabel(input: HTMLInputElement): HTMLLabelElement {
     return label
 }
 
-export {
+/*export {
     getInputLabel,
     getInputCursorPosition,
     copyInputToClipboard,
     clearInput_and_addLastSymbol
-}
+}*/

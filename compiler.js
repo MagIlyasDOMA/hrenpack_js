@@ -1,3 +1,4 @@
+"use strict";
 function downloadTextAsFile(filename, text) {
     const blob = new Blob([text], { type: 'text/plain' });
     const url = URL.createObjectURL(blob);
@@ -8,5 +9,4 @@ function downloadTextAsFile(filename, text) {
     a.click();
     URL.revokeObjectURL(url);
 }
-export { downloadTextAsFile };
 //# sourceMappingURL=compiler.js.map

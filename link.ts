@@ -6,4 +6,4 @@ function loadCSS(href: string): void {
     document.head.appendChild(link);
 }
 
-export { loadCSS };
+// export { loadCSS };

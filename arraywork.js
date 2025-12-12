@@ -1,3 +1,4 @@
+"use strict";
 function arrayIsEmpty(arr) {
     return arr.length === 0 || !arr[0];
 }
@@ -14,5 +15,4 @@ function arraysIsEqual(array1, array2, strict = true) {
         return true;
     }
 }
-export { arrayIsEmpty, arraysIsEqual };
 //# sourceMappingURL=arraywork.js.map

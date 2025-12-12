@@ -1,8 +1,12 @@
 type StepElementStatus = 'uncomplete' | 'active' | 'complete';
+interface StepbarElement extends HTMLElement {
+    currentStep: number;
+}
 declare class AbbreviatedNumber extends HTMLElement {
     isShortened: boolean;
     originalNumber: number;
     constructor();
+    static get observedAttributes(): string[];
     private toggle;
     private getCurrentLang;
     private formatNumber;
@@ -16,6 +20,8 @@ declare class StepElement extends HTMLElement {
     private set active(value);
     private get completed();
     private set completed(value);
+    get label(): string;
+    set label(value: string);
     private reset;
     get status(): StepElementStatus;
     set status(value: StepElementStatus);
@@ -56,5 +62,4 @@ declare class ClickToCopy extends HTMLElement {
     set isNotified(value: boolean);
     connectedCallback(): void;
 }
-export { ClickToCopy, Stepbar, StepElement, AbbreviatedNumber, HTMLFile };
 //# sourceMappingURL=tags.d.ts.map

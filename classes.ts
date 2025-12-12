@@ -113,4 +113,4 @@ class GETParamsManager {
     }
 }
 
-export { ClickableLinksFactory, GETParamsManager };
+// export { ClickableLinksFactory, GETParamsManager };

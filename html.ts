@@ -140,7 +140,7 @@ function elementToHyperlink(element: HTMLElement, href: string,
     return element
 }
 
-export {
+/*export {
     escapeHTML,
     togglePassword,
     strFormat,
@@ -151,4 +151,4 @@ export {
     isTextWrapped,
     get_tagName,
     notArrayEmpty
-};
+};*/

@@ -1,4 +1,4 @@
-import {intToPixel} from "./styles";
+// import {intToPixel} from "./styles";
 
 function pushNotification(title: string = "Уведомление", body: string = "Текст уведомления",
                           icon: NullStr = null): void {
@@ -70,7 +70,7 @@ class HyperTextNotification {
     }
 }
 
-export {
+/*export {
     HyperTextNotification,
     pushNotification
-}
+}*/

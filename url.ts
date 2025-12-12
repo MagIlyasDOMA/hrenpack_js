@@ -24,8 +24,8 @@ function getScriptSite(script: HTMLScriptElement): string {
     return new URL(script.src).origin;
 }
 
-export {
+/*export {
     getScriptSite,
     isAbsoluteUrl,
     combineUrls
-}
+}*/

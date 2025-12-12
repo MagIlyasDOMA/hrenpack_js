@@ -40,9 +40,9 @@ function getHost() {
     return window.location.protocol + '//' + window.location.host;
 }
 
-export {
+/*export {
     getSystemTheme,
     copyTextToClipboard,
     redirectBackOrClose,
     getHost
-}
+}*/

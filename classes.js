@@ -1,3 +1,4 @@
+"use strict";
 class ClickableLinksFactory {
     constructor() {
         Object.defineProperty(this, "urlRegex", {
@@ -99,5 +100,4 @@ class GETParamsManager {
         window.history.pushState({}, '', newUrl);
     }
 }
-export { ClickableLinksFactory, GETParamsManager };
 //# sourceMappingURL=classes.js.map

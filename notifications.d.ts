@@ -18,5 +18,4 @@ declare class HyperTextNotification {
     });
     show(message: string, timeout?: number): void;
 }
-export { HyperTextNotification, pushNotification };
 //# sourceMappingURL=notifications.d.ts.map

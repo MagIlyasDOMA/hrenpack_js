@@ -1,1 +1,3 @@
-export const stylesRoot: CSSStyleDeclaration = getComputedStyle(document.documentElement);
+const stylesRoot: CSSStyleDeclaration = getComputedStyle(document.documentElement);
+
+// export { stylesRoot };

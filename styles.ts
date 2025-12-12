@@ -44,9 +44,9 @@ function intToPixel(number: NumStr = '0'): string {
     return !isNaN(parseInt(number)) ? number + 'px' : number;
 }
 
-export {
+/*export {
     input_type_fc,
     input_form_control,
     input_form_control_unline,
     intToPixel,
-}
+}*/

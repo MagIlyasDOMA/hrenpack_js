@@ -1,3 +1,4 @@
+"use strict";
 function input_type_fc(input) {
     return input.type !== 'hidden' && input.type !== 'reset' && input.type !== 'checkbox' && input.type !== 'radio';
 }
@@ -38,5 +39,4 @@ function intToPixel(number = '0') {
         return '0';
     return !isNaN(parseInt(number)) ? number + 'px' : number;
 }
-export { input_type_fc, input_form_control, input_form_control_unline, intToPixel, };
 //# sourceMappingURL=styles.js.map

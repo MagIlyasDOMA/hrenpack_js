@@ -24,4 +24,4 @@ function arraysIsEqual(array1: any[], array2: any[], strict: boolean = true): bo
     return object1.every((item, index) => item.id === object2[index].id);
 }*/
 
-export { arrayIsEmpty, arraysIsEqual };
+// export { arrayIsEmpty, arraysIsEqual };

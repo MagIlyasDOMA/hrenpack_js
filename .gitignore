@@ -8,4 +8,6 @@ yarn-error.log*
 /.pnp
 .pnp.js
 .idea
-/dist
+test.html
+structure.txt
+tsconfig_old.json

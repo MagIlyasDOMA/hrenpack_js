@@ -1,3 +1,4 @@
+"use strict";
 function loadCSS(href) {
     const link = document.createElement('link');
     link.rel = 'stylesheet';
@@ -5,5 +6,4 @@ function loadCSS(href) {
     link.href = href;
     document.head.appendChild(link);
 }
-export { loadCSS };
 //# sourceMappingURL=link.js.map

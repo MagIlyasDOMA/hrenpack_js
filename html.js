@@ -1,3 +1,4 @@
+"use strict";
 const escapeChars = {
     '<': '&lt;',
     '>': '&gt;',
@@ -108,5 +109,4 @@ function elementToHyperlink(element, href, cursorPointer = true, preventDefault 
         element.style.cursor = 'pointer';
     return element;
 }
-export { escapeHTML, togglePassword, strFormat, elementToHyperlink, password_format, element_to_div, element_toHTMLText, isTextWrapped, get_tagName, notArrayEmpty };
 //# sourceMappingURL=html.js.map
