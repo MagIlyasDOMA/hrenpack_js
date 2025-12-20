@@ -1,6 +1,6 @@
 {
   "name": "hrenpack_js",
-  "version": "3.1.4",
+  "version": "3.1.5",
   "description": "Универсальная frontend библиотека javascript/typescript для большинства задач",
   "main": "index.js",
   "repository": {
@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/MagIlyasDOMA/hrenpack_js#readme",
   "devDependencies": {
-	"@hren/add-copyright": "^1.0.2",
+    "@hren/add-copyright": "^1.0.5",
     "@hren/typescript-bundler": "^1.0.2",
     "typescript": "^5.9.3"
   }
