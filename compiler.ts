@@ -1,3 +1,9 @@
+/*
+* hrenpack_js 3.1.2
+* Copyright (c) 2024-2025, Маг Ильяс DOMA (MagIlyasDOMA)
+* Licensed under MIT (https://github.com/MagIlyasDOMA/hrenpack_js/blob/main/LICENSE)
+*/
+
 function downloadTextAsFile(filename: string, text: string) {
     // Создаем Blob из текста
     const blob = new Blob([text], { type: 'text/plain' });

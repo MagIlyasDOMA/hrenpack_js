@@ -1,3 +1,9 @@
+/*
+* hrenpack_js 3.1.2
+* Copyright (c) 2024-2025, Маг Ильяс DOMA (MagIlyasDOMA)
+* Licensed under MIT (https://github.com/MagIlyasDOMA/hrenpack_js/blob/main/LICENSE)
+*/
+
 declare const escapeChars: StringDict;
 declare function togglePassword(passwordInput: HTMLInputElement): void;
 declare function isTextWrapped(element: HTMLElement): boolean;
