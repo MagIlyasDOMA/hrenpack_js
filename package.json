@@ -1,6 +1,6 @@
 {
   "name": "hrenpack_js",
-  "version": "3.1.2",
+  "version": "3.1.4",
   "description": "Универсальная frontend библиотека javascript/typescript для большинства задач",
   "main": "index.js",
   "repository": {
@@ -11,6 +11,10 @@
     "hrenpack",
     "frontend"
   ],
+  "scripts": {
+    "build": "tsc",
+    "copyright": "add-copyright !(*.d).ts -y 2024-2025 -l -r"
+  },
   "author": "Маг Ильяс DOMA (MagIlyasDOMA)",
   "license": "MIT",
   "bugs": {
@@ -18,7 +22,7 @@
   },
   "homepage": "https://github.com/MagIlyasDOMA/hrenpack_js#readme",
   "devDependencies": {
-    "@hren/add-copyright": "^1.0.0",
+	"@hren/add-copyright": "^1.0.2",
     "@hren/typescript-bundler": "^1.0.2",
     "typescript": "^5.9.3"
   }
