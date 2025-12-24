@@ -13,4 +13,5 @@ type StringDict = {
     [key: string]: string;
 };
 type NumStr = number | string;
+type NullBool = boolean | null;
 //# sourceMappingURL=types.d.ts.map

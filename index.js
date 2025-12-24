@@ -926,3 +926,13 @@ function generateUUIDv4() {
 }
 //# sourceMappingURL=uuid.js.map
 
+
+// string.js
+function stringToBoolean(input) {
+    if (input.toLowerCase() === "true")
+        return true;
+    if (input.toLowerCase() === "false")
+        return false;
+    return null;
+}
+
