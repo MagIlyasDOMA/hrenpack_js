@@ -1,6 +1,6 @@
 {
   "name": "hrenpack_js",
-  "version": "3.2.0",
+  "version": "3.3.0",
   "description": "Универсальная frontend библиотека javascript/typescript для большинства задач",
   "main": "index.js",
   "repository": {
