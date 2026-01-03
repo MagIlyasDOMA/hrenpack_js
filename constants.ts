@@ -1,0 +1,1 @@
+const OnOff = {on: true, off: false};

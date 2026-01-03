@@ -14,4 +14,6 @@ type StringDict = {
 };
 type NumStr = number | string;
 type NullBool = boolean | null;
+
+type OnOffType = 'on' | 'off';
 //# sourceMappingURL=types.d.ts.map

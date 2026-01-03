@@ -1,6 +1,6 @@
 {
   "name": "hrenpack_js",
-  "version": "3.3.0",
+  "version": "3.4.0",
   "description": "Универсальная frontend библиотека javascript/typescript для большинства задач",
   "main": "index.js",
   "repository": {
@@ -13,7 +13,7 @@
   ],
   "scripts": {
     "build": "tsc",
-    "copyright": "add-copyright !(*.d).ts -y 2024-2025 -l -r"
+	"bundle": "tsb . -j index.js -d index.d.ts"
   },
   "author": "Маг Ильяс DOMA (MagIlyasDOMA)",
   "license": "MIT",
