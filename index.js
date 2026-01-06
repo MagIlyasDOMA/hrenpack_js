@@ -1,3 +1,4 @@
+// @ts-nocheck
 // ===== File: arraywork.js =====
 "use strict";
 function arrayIsEmpty(arr) {
