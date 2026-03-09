@@ -29,4 +29,12 @@ function redirectBackOrClose(default_url = '/') {
 function getHost() {
     return window.location.protocol + '//' + window.location.host;
 }
+function getScriptUrl(script) {
+    return script.src;
+}
+function getScriptFolder(script) {
+    const src = script.src.split('/');
+    src.pop();
+    return src.join('/');
+}
 //# sourceMappingURL=system.js.map

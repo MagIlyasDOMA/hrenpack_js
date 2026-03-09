@@ -40,6 +40,20 @@ function getHost() {
     return window.location.protocol + '//' + window.location.host;
 }
 
+
+function getScriptUrl(script: HTMLOrSVGScriptElement | null) {
+    // @ts-ignore
+    return script!.src;
+}
+
+
+function getScriptFolder(script: HTMLOrSVGScriptElement | null) {
+    // @ts-ignore
+    const src = script!.src.split('/');
+    src.pop()
+    return src.join('/');
+}
+
 /*export {
     getSystemTheme,
     copyTextToClipboard,
